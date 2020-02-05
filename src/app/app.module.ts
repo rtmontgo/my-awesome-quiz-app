@@ -10,6 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material';
+import { MatDividerModule } from '@angular/material/divider';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent }, { path: ':quizId', component: QuestionsComponent },
@@ -29,7 +31,9 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
